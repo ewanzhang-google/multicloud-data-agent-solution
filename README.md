@@ -17,7 +17,7 @@ First, we need to run the remote product seller agents which will serve the A2A 
 1. Create a data agent in Azure AI Foundry, and update the model information in remote_agent/agent.py file
 <img width="2255" height="1278" alt="image" src="https://github.com/user-attachments/assets/51287100-6733-4766-a8ea-b3b318d1725d" />
 
-2. Define key varibales for the container app
+2. Define key variables for the container app
 ```bash
 git clone https://github.com/ewanzhang-google/purchasing-concierge-a2a.git
 
@@ -77,7 +77,7 @@ curl "https://$AGENT_URL/.well-known/agent.json"
 
 ### Deploy the Purchasing Concierge Agent in GCP
 
-Second we will run our A2A client capabilities owned by purchasing concierge agent.
+Second we will run our A2A client capabilities owned by the purchasing concierge agent.
 
 #### Prerequisites in GCP
 
@@ -135,7 +135,7 @@ Second we will run our A2A client capabilities owned by purchasing concierge age
 
 ### Run the Chat Interface to Connect to Agent Engine
 
-1. Update the `.env` file with the `AGENT_ENGINE_RESOURCE_NAME` which obtained from the previous step.
+1. Update the `.env` file with the `AGENT_ENGINE_RESOURCE_NAME` which was obtained from the previous step.
 
 2. Run the Gradio app
 
@@ -146,7 +146,7 @@ uv run purchasing_concierge_ui.py
 
 3. Sample queries
 "Can you analyse the order table and give me a count of orders for the top 5 products?"
-"Can you provide me the details of product id 23456?"
+"Can you provide me with the details of product id 23456?"
 <img width="1908" height="1106" alt="image" src="https://github.com/user-attachments/assets/1b16c4da-452f-426b-bc15-43a464664e4f" />
 <img width="1908" height="1106" alt="image" src="https://github.com/user-attachments/assets/e61a0249-f591-442e-95bf-3128e0150c5d" />
 <img width="1908" height="1106" alt="image" src="https://github.com/user-attachments/assets/5b7693f0-4b5b-422e-9319-a1437a621c49" />
